@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Resume - Muhammad Ali E</title>
+  <meta name="description" content="Muhammad Ali E resume, Node.js, Javascript Developer.">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="resume, javascript, muhammadali e, Node.js, python">
+  <meta name="robots" content="index/follow">
+  <meta name="author" content="Muhammad Ali E">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+
+    .profile-details {
+      text-align: center;
+      color: grey;
+    }
+
+    .profile-skill-fields {
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      background-color: #fff;
+      color: grey;
+      padding-top: 10px;
+    }
+
+    .profile-skill-name {
+      grid-column: 1 / span 2;
+    }
+
+    .profile-skill-rating {
+      grid-column: 3 / span 2;
+    }
+
+    .profile-image-name {
+      color: black;
+      font-size: 13px;
+    }
+
+    .profile-field-heading {
+      font-size: 25px;
+    }
+
+    .profile-details-field {
+      padding-top: 15px;
+    }
+
+    .profile-skill-fields-other {
+      padding: 10px;
+      color: grey;
+    }
+
+    .avatar {
+      border-radius: 50%
+    }
+
+    .progressbar {
+      background-color: papayawhip;
+      border-radius: 13px;
+      /* (height of inner div) / 2 + padding */
+      padding: 1px;
+      text-align: center;
+    }
+
+    .progressbar>div {
+      background-color: orange;
+      /* Adjust with JavaScript */
+      height: 19px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 850px) {
+      .main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "sidebar" "content" "footer";
+      }
+    }
+
+    @media (min-width: 850px) {
+      .main {
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "sidebar sidebar content content content" "sidebar sidebar content content content" "sidebar  sidebar  footer footer footer";
+      }
+      .sidebar {
+        height: calc(100vh - 69px);
+        overflow-y: scroll;
+      }
+
+      .content {
+        height: calc(100vh - 69px);
+        overflow-y: scroll;
+      }
+
+      .footer {
+        background-color: white;
+        height: 30px;
+        grid-area: footer;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .main {
+      grid-gap: 10px;
+      color: black;
+      display: grid;
+    }
+
+
+    .box {
+      border-radius: 1px;
+      padding: 10px;
+      box-shadow: 8px 10px 25px 1px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 8px 10px 25px 1px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 8px 10px 25px 1px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+    }
+
+    .content-heading {
+      font-size: 32px;
+      padding-bottom: 10px;
+    }
+
+    .experience {
+      padding: 15px;
+      color: #867777;
+    }
+
+    .about-me-content {
+      padding: 15px;
+      padding-bottom: 20px;
+      color: grey;
+    }
+
+    .experience-head {
+      font-size: 21px;
+      padding-bottom: 10px;
+      color: black;
+    }
+
+    .experience-duration {
+      font-size: 13px;
+      padding-bottom: 7px;
+      color: darkgray;
+    }
+
+    .social-media {
+      text-align: center;
+      color: gray;
+    }
+
+    .no-highlight {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .built-with {
+      text-align: right;
+      font-size: 8px;
+      color: grey;
+      margin-right: 20px;
+    }
+
+
+    .footer-fields {
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .social-media {
+      grid-column: 2 / span 1;
+    }
+
+    .built-with {
+      grid-column: 3 / span 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="box sidebar">
+      <div class="profile-details">
+        <div class="profile-image">
+          <img class="avatar" src="https://secure.gravatar.com/avatar/15a8125192b23fc026df6aa1b2af7969?s=800&d=identicon" style="width:40%"
+            alt="Avatar">
+          <div class="profile-image-name">
+            <h2>Abhilash KM</h2>
+          </div>
+        </div>
+        <div class="profile-details-fields">
+
+          <div class="profile-details-field">
+            <span>
+              <i class="material-icons" style="vertical-align: middle">card_travel</i>
+              Software Engineer
+            </span>
+          </div>
+          <div class="profile-details-field">
+            <span>
+              <i class="material-icons" style="vertical-align: middle">home</i>
+              Kerala, India
+            </span>
+          </div>
+          <div class="profile-details-field">
+            <span>
+              <i class="material-icons" style="vertical-align: middle">email</i>
+              <a class="no-highlight" href="mailto:aaabhilash97@gmail.com">
+                aaabhilash97@gmail.com
+              </a>
+            </span>
+          </div>
+          <div class="profile-details-field">
+            <span>
+              <i class="material-icons" style="vertical-align: middle">phone</i>
+              <a class="no-highlight" href="tel:+919895774319">
+                +919895774319
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="profile-field-heading">
+        <span>
+          <i class="material-icons" style="vertical-align: middle">assessment</i>
+          Skills
+        </span>
+      </div>
+      <br>
+
+      <div class="profile-skill-fields">
+        <div class="profile-skill-name">
+          <i class="material-icons" style="vertical-align: middle">radio_button_checked</i>
+          Node.js & Javascript
+        </div>
+        <div class="profile-skill-rating">
+          <div class="progressbar">
+            <div style="width: 70%;">
+              70%
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-skill-fields">
+        <div class="profile-skill-name">
+          <i class="material-icons" style="vertical-align: middle">radio_button_checked</i>
+          Python
+        </div>
+        <div class="profile-skill-rating">
+          <div class="progressbar">
+            <div style="width: 60%;">
+              60%
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-skill-fields">
+        <div class="profile-skill-name">
+          <i class="material-icons" style="vertical-align: middle">radio_button_checked</i>
+          HTML & CSS
+        </div>
+        <div class="profile-skill-rating">
+          <div class="progressbar">
+            <div style="width: 60%;">
+              60%
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="profile-skill-fields-other">
+        Learning
+        <a class="no-highlight" href="https://golang.org/">GO</a>,
+        <a class="no-highlight" href="https://reactjs.org/">ReactJS</a> nowadays.
+      </div>
+      <hr>
+      <div class="profile-skill-fields-other">
+        Proficient in Git, Gitlab CI/CD, AWS, Linux, Redis, MySql, MongoDB, DynamoDB, BeanstalkD, Nginx, Haproxy, PM2.
+      </div>
+      <div class="profile-skill-fields-other">
+        Node.js frameworks like
+        <a class="no-highlight" href="http://expressjs.com/">Express.js</a>,
+        <a class="no-highlight" href="https://www.fastify.io/">fastify</a>.
+      </div>
+      <div class="profile-skill-fields-other">
+        Testing Framework and tools like Mocha, chai, supertest.
+      </div>
+    </div>
+
+    <div class="box content">
+      <div class="content-heading">
+        <i class="material-icons" style="vertical-align: middle">account_circle</i>
+        About Me
+      </div>
+
+      <div class="about-me-content">
+        I am a seasoned expert Full Stack Developer who is prototyping and developing software for working organization.
+      </div>
+
+      <div class="content-heading">
+        <i class="material-icons" style="vertical-align: middle">card_travel</i>
+        Work Experience
+      </div>
+      <div class="experience">
+        <div class="experience-head">
+          Software Engineer @ Smartron India Pvt Ltd.
+        </div>
+        <div class="experience-duration">
+          <i class="material-icons" style="vertical-align: middle">date_range</i>
+          Dec 2016 - Present
+        </div>
+        <div class="experience-description">
+          Handling multiple projects in multiple domains, like IOT backend, cloud storage etc.
+        </div>
+      </div>
+      <div class="experience">
+        <div class="experience-head">
+          Software Engineer @ Option3.io.
+        </div>
+        <div class="experience-duration">
+          <i class="material-icons" style="vertical-align: middle">date_range</i>
+          May 2016 - Dec 2016
+        </div>
+        <div class="experience-description">
+          <p>
+            Software developer in Test Automation tool JIFFY. Helped the tool to improve by features and bug fixing.
+          </p>
+          <p>
+            Technologies involved: Javascript, Python, Django, Backbone.js, Oracle.
+          </p>
+        </div>
+      </div>
+
+      <div class="experience">
+        <div class="experience-head">
+          Technical Consultant @ Wintlt & Mobizippy.
+        </div>
+        <div class="experience-duration">
+          <i class="material-icons" style="vertical-align: middle">date_range</i>
+          Apr 2015 - Apr 2016
+        </div>
+        <div class="experience-description">
+          <p>MobiZippy is a platform that lets eCommerce merchants very quickly and affordably create world-class mobile commerce
+            apps targeting the most prominent platforms. In record time, MobiZippy provides eCommerce merchants with a full-fledged,
+            comprehensive mobile strategy.
+          </p>
+          <p>
+            Learned Node.js and Javascript and worked for the console and Magento, Opencart drivers for Mobizippy. Integrated multiple
+            payment gateways such as EBS, Paytm, CCAvenue etc. with our product. Automated HTML5 application creation process
+            and deployed application with Nginx, AWS route53 and AWS CloudFront.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="box footer">
+      <div class="footer-fields">
+        <div class="social-media">
+          <div class="social-media-head">
+            Find Me On Social Media
+          </div>
+          <a class="no-highlight" href="https://github.com/muhammadalie">
+            <svg height="20" width="20" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
+              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+          </a>
+          <a class="no-highlight" href="https://www.linkedin.com/in/muhammadali/">
+            <svg height="20" width="20" preserveAspectRatio="xMinYMin meet" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <g class="scaling-icon" style="fill-opacity: 1">
+                <g class="bug-21dp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g class="dp-1">
+                    <path d="M19.479,0 L1.583,0 C0.728,0 0,0.677 0,1.511 L0,19.488 C0,20.323 0.478,21 1.333,21 L19.229,21 C20.086,21 21,20.323 21,19.488 L21,1.511 C21,0.677 20.336,0 19.479,0"
+                      class="bug-text-color" fill="#FFFFFF"></path>
+                    <path d="M19.479,0 L1.583,0 C0.728,0 0,0.677 0,1.511 L0,19.488 C0,20.323 0.478,21 1.333,21 L19.229,21 C20.086,21 21,20.323 21,19.488 L21,1.511 C21,0.677 20.336,0 19.479,0 Z M8,8 L10.827,8 L10.827,9.441 L10.858,9.441 C11.289,8.664 12.562,7.875 14.136,7.875 C17.157,7.875 18,9.479 18,12.45 L18,18 L15,18 L15,12.997 C15,11.667 14.469,10.5 13.227,10.5 C11.719,10.5 11,11.521 11,13.197 L11,18 L8,18 L8,8 Z M3,18 L6,18 L6,8 L3,8 L3,18 Z M6.375,4.5 C6.375,5.536 5.536,6.375 4.5,6.375 C3.464,6.375 2.625,5.536 2.625,4.5 C2.625,3.464 3.464,2.625 4.5,2.625 C5.536,2.625 6.375,3.464 6.375,4.5 Z"
+                      class="background" fill="#0077B5"></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a class="no-highlight" href="https://stackoverflow.com/users/2857486/muhammadali">
+            <img height="20" width="20" src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.svg?v=f13ebeedfa9e">
+          </a>
+        </div>
+        <div class="built-with">
+          <div class="built-with-heading">
+            Built with
+          </div>
+          HTML, CSS-GRID &
+          <a class="no-highlight" href="https://material.io/tools/icons/">MATERIAL ICONS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
